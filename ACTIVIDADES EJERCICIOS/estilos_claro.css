@@ -1,0 +1,35 @@
+/* Estilos para el tema claro */
+body {
+    background-color: #e9ecef; /* Fondo gris claro para el cuerpo */
+    color: #212529; /* Color de texto oscuro para el cuerpo */
+}
+
+.formulario-contenedor {
+    background-color: #f8f9fa; /* Fondo blanco para el contenedor del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra muy suave para el contenedor */
+}
+
+h1 {
+    color: #343a40; /* Color de texto oscuro para el título */
+}
+
+label {
+    color: #495057; /* Color de texto gris oscuro para las etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    border: 1px solid #ced4da; /* Borde gris claro para los campos de entrada */
+    background-color: #fff; /* Fondo blanco para los campos de entrada */
+    color: #495057; /* Color de texto gris oscuro para los campos de entrada */
+}
+
+button {
+    background-color: #28a745; /* Color de fondo verde para los botones */
+}
+
+button:hover {
+    background-color: #1e7e34; /* Color de fondo verde más oscuro al pasar el ratón */
+}
