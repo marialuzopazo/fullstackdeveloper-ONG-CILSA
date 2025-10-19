@@ -1,0 +1,39 @@
+/* Estilos para el tema de alto contraste azul y amarillo */
+body {
+    background-color: #000080; /* Fondo azul oscuro para la página */
+    color: #ffff00; /* Color de texto amarillo para la página */
+}
+
+.formulario-contenedor-ac {
+    background-color: #ffff00; /* Fondo amarillo para el contenedor del formulario */
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5); /* Sombra amarilla alrededor del contenedor */
+}
+
+h1 {
+    color: #000080; /* Color de texto azul oscuro para el título */
+}
+
+label {
+    color: #000080; /* Color de texto azul oscuro para las etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    border: 2px solid #000080; /* Borde azul oscuro para los campos de entrada */
+    background-color: #fff8dc; /* Fondo amarillo pálido para los campos de entrada */
+    color: #000080; /* Color de texto azul oscuro para los campos de entrada */
+}
+
+button {
+    background-color: #000080; /* Color de fondo azul oscuro para el botón */
+    color: #ffff00; /* Color de texto amarillo para el botón */
+    border: 2px solid #ffff00; /* Borde amarillo para el botón */
+}
+
+button:hover {
+    background-color: #ffff00; /* Color de fondo amarillo al pasar el mouse o el raton  */
+    color: #000080; /* Color de texto azul oscuro al pasar el mouse*/
+    border-color: #000080; /* Color de borde azul oscuro al pasar el mpoouse o raton */
+}
