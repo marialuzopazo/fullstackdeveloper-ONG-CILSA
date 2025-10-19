@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales - Alto Contraste</title>
+    <link rel="stylesheet" href="estilos_alto_contraste.css"> 
+    <link rel="stylesheet" href="estilos_alto_contraste_azul.css"> 
+    <link rel="stylesheet" href="estilos_alto_contraste_amarillo.css"> </head>
+<body>
+    <div class="formulario-contenedor-ac">
+        <h1>Formulario de Datos Personales</h1>
+        <form action="#" method="post">
+            <div class="campo-ac">
+                <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" required> </div>
+
+            <div class="campo-ac">
+                <label for="apellido">Apellido:</label> <input type="text" id="apellido" name="apellido" required> </div>
+
+            <div class="campo-ac">
+                <label for="email">Email:</label> <input type="email" id="email" name="email" required> </div>
+
+            <div class="campo-ac">
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label> <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"> </div>
+
+            <div class="campo-ac">
+                <label for="pais">País de Residencia:</label> <select id="pais" name="pais"> <option value="ar">Argentina</option>
+                    <option value="bo">Bolivia</option>
+                    <option value="br">Brasil</option>
+                    <option value="cl">Chile</option>
+                    <option value="co">Colombia</option>
+                    <option value="ec">Ecuador</option>
+                    <option value="py">Paraguay</option>
+                    <option value="pe">Perú</option>
+                    <option value="uy">Uruguay</option>
+                    <option value="ve">Venezuela</option>
+                </select>
+            </div>
+
+            <div class="botones-ac">
+                <button type="submit">Enviar</button> <button type="button" onclick="document.getElementById('estilos-ac').setAttribute('href', 'estilos_alto_contraste_azul.css')">Alto Contraste Azul</button>
+                <button type="button" onclick="document.getElementById('estilos-ac').setAttribute('href', 'estilos_alto_contraste_amarillo.css')">Alto Contraste Amarillo</button>
+            </div>
+        </form>
+    </div>
+
+    <link id="estilos-ac" rel="stylesheet" href="estilos_alto_contraste.css">
+</body>
+</html>
