@@ -1,0 +1,82 @@
+/* Estilos base para el tema de alto contraste (blanco y negro) */
+body {
+    font-family: sans-serif; /* Fuente de letra general */
+    background-color: #000; /* Fondo negro para la página */
+    color: #fff; /* Color de texto blanco para la página */
+    display: flex; /* Utiliza Flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura de la ventana */
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+}
+
+/* Contenedor principal del formulario en alto contraste */
+.formulario-contenedor-ac {
+    background-color: #fff; /* Color de fondo blanco para el contenedor del formulario */
+    padding: 30px; /* Espacio interno alrededor del contenido del contenedor */
+    border-radius: 8px; /* Bordes redondeados del contenedor */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Sombra suave en color blanco alrededor del contenedor */
+    width: 400px; /* Ancho fijo del contenedor */
+}
+
+/* Título del formulario en alto contraste */
+h1 {
+    text-align: center; /* Centra el texto del título */
+    color: #000; /* Color del texto negro para el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilos para cada campo del formulario en alto contraste */
+.campo-ac {
+    margin-bottom: 15px; /* Espacio debajo de cada campo */
+}
+
+/* Etiquetas de los campos en alto contraste */
+label {
+    display: block; /* Hace que la etiqueta ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    color: #000; /* Color del texto negro para la etiqueta */
+    font-weight: bold; /* Texto de la etiqueta en negrita */
+}
+
+/* Input de texto y otros elementos de entrada (text, email, date) y el selector en alto contraste */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: calc(100% - 12px); /* Ancho del 100% menos el borde para evitar desbordamiento */
+    padding: 8px; /* Espacio interno dentro del campo de entrada */
+    border: 2px solid #000; /* Borde negro y más grueso para el campo de entrada */
+    border-radius: 4px; /* Bordes redondeados del campo de entrada */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    font-size: 16px; /* Tamaño de la fuente del texto dentro del campo */
+    color: #000; /* Color del texto negro dentro del campo */
+    background-color: #fff; /* Fondo blanco para los campos de entrada */
+}
+
+/* Contenedor para los botones en alto contraste */
+.botones-ac {
+    display: flex; /* Utilizo la Flexbox para alinear los botones */
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px; /* Espacio encima de los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+}
+
+/* Estilos para los botones en alto contraste */
+button {
+    background-color: #000; /* Color de fondo negro para el botón */
+    color: #fff; /* Color del texto blanco para el botón */
+    padding: 10px 15px; /* Espacio interno dentro del botón */
+    border: 2px solid #fff; /* Borde blanco y más grueso para el botón */
+    border-radius: 4px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por ensima*/
+    font-size: 16px; /* Tamaño de la fuente del texto del botón */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transición suave para los cambios de color de fondo, texto y borde */
+}
+
+/* Estilo al pasar el mouse por encima del botón en alto contraste */
+button:hover {
+    background-color: #fff; /* Color de fondo blanco al pasar el mouse o el raton  */
+    color: #000; /* Color de texto negro al pasar el mpouse o raton */
+    border-color: #000; /* Color de borde negro al pasar el mouse */
+}
