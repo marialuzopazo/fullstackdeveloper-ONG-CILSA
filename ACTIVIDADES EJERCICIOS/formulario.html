@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--primero hago la Declaración del tipo de documento y el idioma de la página-->
+<html lang="es">
+<head>
+    <!--ahora voy a colocar en la cabeza (esto no lo ve el usuario)todo lo que voy a relacionar, caracteres y el titulo-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales opazo maria luz</title>
+    <link rel="stylesheet" href="estilos.css">  
+    <link rel="stylesheet" href="estilos_claro.css"> 
+    <link rel="stylesheet" href="estilos_oscuro.css"> </head>
+
+<body>
+    <!--ahora si, estoy en el cuerpo de mi pagina, comienzo con mi formulario a aplicar lo de los apuntes-->
+    <div class="formulario-contenedor">
+        <h1>Formulario de Datos Personales</h1> <!--elijo un h1 para el titulo principal-->
+        <form action="#" method="post">
+            <div class="campo"> <!--empiezo con mi contenedor -->
+                <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" required> </div>
+
+            <div class="campo">
+                <label for="apellido">Apellido:</label> <input type="text" id="apellido" name="apellido" required> </div>
+
+            <div class="campo">
+                <label for="email">Email:</label> <input type="email" id="email" name="email" required> </div>
+
+            <div class="campo">
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label> <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"> </div>
+
+            <div class="campo">
+                <label for="pais">País de Residencia:</label> <select id="pais" name="pais"> <option value="ar">Argentina</option>
+                    <option value="bo">Bolivia</option>
+                    <option value="br">Brasil</option>
+                    <option value="cl">Chile</option>
+                    <option value="co">Colombia</option>
+                    <option value="ec">Ecuador</option>
+                    <option value="py">Paraguay</option>
+                    <option value="pe">Perú</option>
+                    <option value="uy">Uruguay</option>
+                    <option value="ve">Venezuela</option>
+                </select>
+            </div>
+
+            <div class="botones">
+                <button type="submit">Enviar</button> <button type="button" onclick="document.getElementById('estilos').setAttribute('href', 'estilos_claro.css')">Estilo Claro</button>
+                <button type="button" onclick="document.getElementById('estilos').setAttribute('href', 'estilos_oscuro.css')">Estilo Oscuro</button>
+            </div>
+        </form>
+    </div>
+
+    <link id="estilos" rel="stylesheet" href="estilos.css">
+</body>
+</html>
