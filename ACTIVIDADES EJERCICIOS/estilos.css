@@ -1,0 +1,77 @@
+/* Estilos para la página */
+body {
+    font-family: sans-serif; /* Fuente de letra general */
+    background-color: #f4f4f4; /* Color de fondo de la página */
+    display: flex; /* Utiliza Flexbox para el diseño */
+    justify-content: center; /* esto va a centrar horizontalmente el contenido */
+    align-items: center; /* esto va a  centrar verticalmente el contenido */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura de la ventana */
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+}
+
+/* esto es el Contenedor principal del formulario */
+.formulario-contenedor {
+    background-color: #fff; /* Color de fondo del contenedor del formulario */
+    padding: 30px; /* Espacio interno alrededor del contenido del contenedor */
+    border-radius: 8px; /* Bordes redondeados del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del contenedor */
+    width: 400px; /* Ancho fijo del contenedor */
+}
+
+/* Título del formulario */
+h1 {
+    text-align: center; /* Centra el texto del título */
+    color: #333; /* Color del texto del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilos para cada campo del formulario (contenedor de etiqueta e input) */
+.campo {
+    margin-bottom: 15px; /* Espacio debajo de cada campo */
+}
+
+/* Etiquetas de los campos */
+label {
+    display: block; /* Hace que la etiqueta ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    color: #555; /* Color del texto de la etiqueta */
+    font-weight: bold; /* Texto de la etiqueta en negrita */
+}
+
+/* Input de texto y otros elementos de entrada (text, email, date) y el selector */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: calc(100% - 12px); /* Ancho del 100% menos el borde para evitar desbordamiento */
+    padding: 8px; /* Espacio interno dentro del campo de entrada */
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+    border-radius: 4px; /* Bordes redondeados del campo de entrada */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    font-size: 16px; /* Tamaño de la fuente del texto dentro del campo */
+}
+
+/* Contenedor para los botones */
+.botones {
+    display: flex; /* Utiliza Flexbox para alinear los botones */
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px; /* Espacio encima de los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #007bff; /* Color de fondo del botón (azul) */
+    color: white; /* Color del texto del botón (blanco) */
+    padding: 10px 15px; /* Espacio interno dentro del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 4px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima (indica que es interactivo) */
+    font-size: 16px; /* Tamaño de la fuente del texto del botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Estilo al pasar el ratón por encima del botón */
+button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el ratón */
+}
